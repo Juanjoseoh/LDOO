@@ -1,0 +1,4 @@
+El formulario de HTML se encuentra en la seccion de REGISTRO
+Ademas la tabla se encuentra en la parte inferior, cerca del Footer
+
+Saludos.
