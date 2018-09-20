@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Package_practica;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -32,71 +31,93 @@ public class Servlet_practica3 extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-
-            /*Variables*/
-            String apellidom = request.getParameter("apellidom");
-            String apellidop = request.getParameter("apellidop");
-            String nombre = request.getParameter("nombre");
-            String fecha = request.getParameter("fecha");
-            String email = request.getParameter("email");
-            String pass = request.getParameter("password");
-
+            
+            /*VARIABLES*/
+            String nombre = request.getParameter("Apellidom");
+            String apellidop = request.getParameter("Apellidop");
+            String apellidom = request.getParameter("Nombre");
+            String correo = request.getParameter("Email");
+            String fecha = request.getParameter("Fecha");
+            String password = request.getParameter("Contrasena");
+           /*VARIABLES*/
+            
+            
+            
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
+            out.println("<title>Servlet formulario</title>");   
+            
+            /*LINK CSS Bootstrap*/
             out.println("<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">");
+            /*LINK CSS Bootstrap*/
+            
+            /*LINK JS */
             out.println("<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>");
+            /*LINK JS*/
+            
+            /*LINK JS Bootstrap*/
             out.println("<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>");
-            out.println("<title>Registro</title>");
+            /*LINK JS Bootstrap*/
+            
             out.println("</head>");
             out.println("<body>");
+            out.println("<h1>Servlet formulario at " + request.getContextPath() + "</h1>");
+            out.println("        <form action=formulario method='post'>");
+            
+                out.println("          <div class='w3-row-padding' style='margin:0 -16px 8px -16px'>");
+                
+                out.println("            <div class='w3-half'>");
+                out.println("              <input class='w3-input w3-border' type='email' placeholder='Apellido Paterno' required name='Apellidop'>");
+                out.println("            </div>");
+                out.println("<br>");
+                
+                out.println("            <div class='w3-half'>");
+                out.println("              <input class='w3-input w3-border' type='email' placeholder='Apellido Materno' required name='Apellidom'>");
+                out.println("            </div>");
+                out.println("<br>");
+                
+                out.println("            <div class='w3-half'>");
+                out.println("              <input class='w3-input w3-border' type='text' placeholder='Nombre' required name='Nombre'>");
+                out.println("            </div>");
+                out.println("<br>");
 
-             /*INICIO DEL CONTAINER*/
-            out.println("<div class=\"container\">");
+                out.println("            <div class='w3-half'>");
+                out.println("              <input class='w3-input w3-border' type='date' placeholder='Fecha de nacimiento' required name='Fecha'>");
+                out.println("            </div>");
+                out.println("<br>");
 
-                /*INICIO DEL ROW*/
-                out.println("<div class=\"row\">");
-
-                  /*INICIO DE COL #1*/
-                    out.println("<div class=\"col\">");
-                        out.println("<h1>Tus datos son los siguientes: </h1>");
-
-                        out.println("<h2>Apellido paterno </h2>");
-                        out.println(apellidop);
-
-                        out.println("<h2>Apellido materno </h2>");
-                        out.println(apellidom);
-
-                        out.println("<h2>Nombre </h2>");
-                        out.println(nombre);
-
-                        out.println("<h2>Fecha de nacimiento </h2>");
-                        out.println(fecha);
-
-                        out.println("<h2>Correo </h2>");
-                        out.println(email);
-
-                        out.println("<h2>Password </h2>");
-                        out.println(pass);
-
-                     out.println("</div>");
-                     /*FIN DE COL #1*/
-
-                     /*INICIO DE COL #2*/
-                     out.println("<div class=\"col\">");
-
-
-                     out.println("</div>");
-                      /*FIN DE COL #2*/
-
-            out.println("</div>");
-            /*FIN DEL ROW*/
-
-            out.println("</div>");
-            /*FIN DEL CONTAINER*/
+                
+                out.println("            <div class='w3-half'>");
+                out.println("              <input class='w3-input w3-border' type='email' placeholder='Correo' required name='Email'>");
+                out.println("            </div>");
+                out.println("<br>");
+                
+                
+                out.println("            <div class='w3-half'>");
+                out.println("              <input class='w3-input w3-border' type='password' placeholder='Contraseña' required name='Password'>");
+                out.println("            </div>");
+                out.println("<br>");
+            
+            
+            out.println("<button class='w3-button w3-black w3-section w3-right' type='submit'>ENVIAR</button>");
+            
+            out.println("</form>");
 
             out.println("</body>");
             out.println("</html>");
+            
+                
+            /*Impresion de datos*/
+                out.println(" <h2>Tus datos son los siguientes: </h2>");
+                out.println("Apellido Paterno: " + apellidop);
+                out.println("Apellido Materno: " + apellidom);
+                out.println("Nombre: " + nombre);
+                out.println("<br> Su fecha de nacimiento es: " + fecha);
+                out.println("<br>Correo: " + correo);
+                out.println("<br>contraseña: " + password);
+            /*Impresion de datos*/    
+            
         }
     }
 
