@@ -1,10 +1,5 @@
-<%--
-    Document   : respuesta
-    Created on : 19/09/2018, 06:50:16 PM
-    Author     : Black Horse
---%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -30,7 +25,6 @@
          String fecha = request.getParameter("fecha");
          String correo = request.getParameter("correo");
          String password = request.getParameter("password");
-
         %>
 
         <div class="container">
