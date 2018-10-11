@@ -19,12 +19,14 @@
         <%--Variables--%>
 
         <%
-         String apellidom = request.getParameter("apellidom");
-         String apellidop = request.getParameter("apellidop");
-         String nombre = request.getParameter("nombre");
-         String fecha = request.getParameter("fecha");
-         String correo = request.getParameter("correo");
-         String password = request.getParameter("password");
+            
+            String apellidop= request.getParameter("apellidop");
+            String apellidom= request.getParameter("apellidom");
+            String nombre= request.getParameter("nombre");
+            String fecha= request.getParameter("fecha");
+            String correo= request.getParameter("correo");
+            String password= request.getParameter("password");
+                
         %>
 
         <div class="container">

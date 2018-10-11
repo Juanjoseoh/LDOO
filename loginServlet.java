@@ -11,13 +11,13 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import modelo.ModeloClientes;
+import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author Black Horse
+ * @author Juan Jose Ornelas Herrera
  */
-public class ControladorClientes extends HttpServlet {
+public class loginServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -31,33 +31,31 @@ public class ControladorClientes extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) 
-        {
-            /*Instancia a modelo*/
-            ModeloClientes modelo = new ModeloClientes();
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
             
-            String usuario = request.getParameter("usuario");
-            String apellidop= request.getParameter("apellidop");
-            String apellidom= request.getParameter("apellidom");
-            String nombre= request.getParameter("nombre");
-            String fecha= request.getParameter("fecha");
-            String correo= request.getParameter("correo");
-            String password= request.getParameter("password");
+            // obtener la sesión, o crearla si no existe
+            HttpSession sesion = request.getSession(true);
             
-            /*Metodo para validar datos*/
-            modelo.FaltanDatos(usuario,apellidop,apellidom,nombre,fecha,correo,password);
+            // obtenar el atributo guardado "nombre", si es que existe previamente
+            String nombre = (String) sesion.getAttribute("nombre");
+
+            //Credenciales del usuario
+            String usuario = (String) request.getParameter("usuario");
+            String password = (String) request.getParameter("password");
             
             
-            if(modelo.validacion==false)
-            {
-                response.sendRedirect("FaltanDatos.jsp");
-            }
+                if(usuario.equalsIgnoreCase("JUANJO")&& password.equalsIgnoreCase("1234"))
+                {
+                    sesion.setAttribute("nombre", usuario);
+                    response.sendRedirect("LoginGood.jsp");
+                }
             
             
-           else
-            {
-                response.sendRedirect("respuesta.jsp");
-            }
+                 else
+                 {
+                      response.sendRedirect("LoginError.jsp");
+                 }
             
             
         }

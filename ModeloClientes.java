@@ -5,7 +5,6 @@
  */
 package modelo;
 
-import java.util.HashMap;
 
 /**
  *
@@ -13,28 +12,27 @@ import java.util.HashMap;
  */
 public class ModeloClientes 
 {
-    private HashMap clientes;
-    
-    public ModeloClientes()
-    {
-        clientes = new HashMap();
-        
-        clientes.put(01,new Cliente( "Ornelas","Herrera","Juan Jose","16/10/1998","juanjo@gmail.com","1234"));
-        
-      
-    }
-      
+    public boolean validacion;
+       
         /*Validador de datos*/
     
         /*Esta opcion valida si en un input falta un dato, en caso*/
         /* de no faltar nada envia un boleano con valor true*/
         /*el cual se lee en el controladorClientes*/
-        public boolean FaltanDatos(String apellidop,String apellidom,String nombre,String fecha,String correo, String password) 
+        public boolean FaltanDatos(String usuario,String apellidop,String apellidom,String nombre,String fecha,String correo, String password) 
        {
-           boolean bueno=true;
-         
-      
-           return bueno;
+           if(usuario.equals("")&&apellidop.equals("")&&apellidom.equals("")&&nombre.equals("")&&fecha.equals("")&&correo.equals("")&&password.equals(""))
+           {
+               return validacion=false;
+           }
+           
+           else
+           {
+               return validacion= true;
+           }
+           
        }
+        
+        
     
 }

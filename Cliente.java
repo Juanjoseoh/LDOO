@@ -11,6 +11,7 @@ package modelo;
  */
 public class Cliente
 {
+    private String usuario;
     private String ApPaterno;
     private String ApMaterno;
     private String Nombre;
@@ -20,8 +21,9 @@ public class Cliente
     
     
      /*Constructor*/
-    Cliente(String apellidop, String apellidom, String nombre, String fecha, String correo, String password) 
+    Cliente(String usuario,String apellidop, String apellidom, String nombre, String fecha, String correo, String password) 
     {
+        usuario="juanjito09";
         apellidop="Ornelas";
         apellidom="Herrera";
         nombre="Juan Jose";
@@ -113,6 +115,20 @@ public class Cliente
      */
     public void setPassword(String Password) {
         this.Password = Password;
+    }
+
+    /**
+     * @return the usuario
+     */
+    public String getUsuario() {
+        return usuario;
+    }
+
+    /**
+     * @param usuario the usuario to set
+     */
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
 
