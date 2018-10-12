@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tech Mag</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Tech Mag template project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--ESTILO Bootstrap-->
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+<!--ESTILO Bootstrap-->
+
+<!--TIPO DE FUENTE-->
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!--TIPO DE FUENTE-->
+
+<!--ESTILO SLIDER-->
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<!--ESTILO SLIDER-->
+
+<!--ESTILO -->
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<!--ESTILO -->
+
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header">
+
+		<!-- Header Content -->
+		<div class="header_content_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_content d-flex flex-row align-items-center justfy-content-start">
+							<div class="logo_container">
+								<a href="#">
+									<div class="logo"><span>Tech</span>mag</div>
+									<div class="logo_sub">Revista de Innovacion y Tecnologia</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header Navigation & Search -->
+		<div class="header_nav_container" id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_nav_content d-flex flex-row align-items-center justify-content-start">
+
+							<!-- Logo -->
+							<div class="logo_container">
+								<a href="#">
+									<div class="logo"><span>Tech</span>mag</div>
+									<div class="logo_sub">Revista de idea Innovacion y Tecnologia</div>
+								</a>
+							</div>
+
+							<!-- Nav -->
+							<nav class="main_nav">
+								<ul class="main_nav_list d-flex flex-row align-items-center justify-content-start">
+									<li><a href="index.html">Inicio</a></li>
+									<li><a href="#">Acerca de</a></li>
+									<li><a href="#">Innovacion</a></li>
+									<li><a href="videos.html">videos</a></li>
+									<li><a href="registro.html">Registro</a></li>
+								</ul>
+							</nav>
+
+							<!-- Busqueda -->
+							<div class="header_search_container ml-auto">
+								<div class="header_search">
+									<form action="#" id="header_search_form" class="header_search_form d-flex flex-row align-items-center justfy-content-start">
+										<div><div class="header_search_activation"><i class="fa fa-search" aria-hidden="true"></i></div></div>
+										<input type="text" class="header_search_input" placeholder="Search" required="required">
+									</form>
+								</div>
+							</div>
+
+							<!-- Hamburger -->
+							<div class="hamburger ml-auto menu_mm"><i class="fa fa-bars  trans_200 menu_mm" aria-hidden="true"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
+		<div class="search">
+			<form action="#" class="header_search_form menu_mm">
+				<input type="search" class="search_input menu_mm" placeholder="Search" required="required">
+				<button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
+					<i class="fa fa-search menu_mm" aria-hidden="true"></i>
+				</button>
+			</form>
+		</div>
+		<nav class="menu_nav">
+			<ul class="menu_mm">
+				<li class="menu_mm"><a href="index.html"></a></li>
+				<li class="menu_mm"><a href="courses.html">Tech</a></li>
+				<li class="menu_mm"><a href="instructors.html">Innovation</a></li>
+				<li class="menu_mm"><a href="#">Videos</a></li>
+				<li class="menu_mm"><a href="blog.html">World</a></li>
+				<li class="menu_mm"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="menu_subscribe"><a href="#">Subscribe</a></div>
+		<div class="menu_extra">
+			<div class="menu_social">
+				<ul>
+					<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Inicio -->
+
+	<div class="home">
+
+		<!-- Home Slider -->
+		<div class="home_slider_container">
+			<div class="owl-carousel owl-theme home_slider">
+				<!-- Slide -->
+				<div class="owl-item home_slider_item">
+					<div class="background_image" style="background-image:url(images/home_slider.jpg)"></div>
+					<div class="home_slider_content text-center">
+						<div class="home_slider_content_inner" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
+							<div class="home_category"><a href="category.html">Tecnologia</a></div>
+							<div class="home_title">Construyendo el futuro</div>
+							<div class="home_text">Conoce lo mejor en tecnologia de la mano de expertos en su ramo sin perder de vista los ultimos avances</div>
+							<div class="home_button trans_200"><a href="#">Leer mas</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- Slide -->
+				<div class="owl-item home_slider_item">
+					<div class="background_image" style="background-image:url(images/home_slider.jpg)"></div>
+					<div class="home_slider_content text-center">
+						<div class="home_slider_content_inner" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
+							<div class="home_category"><a href="category.html">Tecnologia</a></div>
+							<div class="home_title">Construyendo el futuro</div>
+						 <div class="home_text">Conoce lo mejor en tecnologia de la mano de expertos en su ramo sin perder de vista los ultimos avances</div>
+							<div class="home_button trans_200"><a href="#">Leer mas</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- Slide -->
+				<div class="owl-item home_slider_item">
+					<div class="background_image" style="background-image:url(images/home_slider.jpg)"></div>
+					<div class="home_slider_content text-center">
+						<div class="home_slider_content_inner" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
+							<div class="home_category"><a href="category.html">Tecnologia</a></div>
+							<div class="home_title">Construyendo el futuro</div>
+						  <div class="home_text">Conoce lo mejor en tecnologia de la mano de expertos en su ramo sin perder de vista los ultimos avances</div>
+							<div class="home_button trans_200"><a href="#">Leer mas</a></div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Home Slider Navigation -->
+			<div class="home_slider_nav home_slider_prev trans_200"><i class="fa fa-angle-left trans_200" aria-hidden="true"></i></div>
+			<div class="home_slider_nav home_slider_next trans_200"><i class="fa fa-angle-right trans_200" aria-hidden="true"></i></div>
+		</div>
+	</div>
+
+	<!-- Intro -->
+
+	<div class="intro">
+		<div class="container">
+			<div class="row">
+
+	<!-- Content Container -->
+
+	<div class="content_container">
+
+		<!-- Featured Title -->
+		<div class="featured_title">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="section_title_container d-flex flex-row align-items-start justify-content-start">
+							<div>
+								<div class="section_title">Articulos Principales</div>
+								<div class="section_subtitle">Lo + relevante</div>
+							</div>
+							<div class="section_bar"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+
+			 	<!-- Main Content -->
+
+				<div class="col-lg-9">
+					<div class="main_content">
+
+						<!-- Featured -->
+
+						<div class="featured">
+							<div class="row">
+								<div class="col-lg-8">
+
+									<!-- Post -->
+									<div class="post_item post_v_large d-flex flex-column align-items-start justify-content-start">
+										<div class="post_image"><img src="images/post_1.jpg" alt="https://unsplash.com/@cgower"></div>
+										<div class="post_content">
+											<div class="post_category cat_technology"><a href="category.html">Tecnologia</a></div>
+											<div class="post_title"><a href="single.html">Lo + destacado de Apple</a></div>
+											<div class="post_info d-flex flex-row align-items-center justify-content-start">
+												<div class="post_author d-flex flex-row align-items-center justify-content-start">
+													<div><div class="post_author_image"><img src="images/author_1.jpg" alt=""></div></div>
+													<div class="post_author_name"><a href="#">Michael Smith</a></div>
+												</div>
+												<div class="post_date"><a href="#">29 April 2018</a></div>
+												<div class="post_comments ml-auto"><a href="#">3 comments</a></div>
+											</div>
+											<div class="post_text">
+												<p>La iMac es la compañera ideal de los profesionales, porque trabajar con ella es una experiencia única.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4">
+
+									<!-- Post -->
+									<div class="post_item post_v_small d-flex flex-column align-items-start justify-content-start">
+										<div class="post_image"><img src="images/post_2.jpg" alt="https://unsplash.com/@lloydaleveque"></div>
+										<div class="post_content">
+											<div class="post_category cat_world"><a href="category.html">mundial</a></div>
+											<div class="post_title"><a href="single.html">Dispositivos del futuro</a></div>
+											<div class="post_info d-flex flex-row align-items-center justify-content-start">
+												<div class="post_author d-flex flex-row align-items-center justify-content-start">
+													<div><div class="post_author_image"><img src="images/author_1.jpg" alt=""></div></div>
+													<div class="post_author_name"><a href="#">JJ Abrahams</a></div>
+												</div>
+												<div class="post_date"><a href="#">31 Abril 2017</a></div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Post -->
+									<div class="post_item post_v_small d-flex flex-column align-items-start justify-content-start">
+										<div class="post_image"><img src="images/post_3.jpg" alt="https://unsplash.com/@agkdesign"></div>
+										<div class="post_content">
+											<div class="post_category cat_world"><a href="category.html">Mundial</a></div>
+											<div class="post_title"><a href="single.html">Dispositivos del futuro</a></div>
+											<div class="post_info d-flex flex-row align-items-center justify-content-start">
+												<div class="post_author d-flex flex-row align-items-center justify-content-start">
+													<div><div class="post_author_image"><img src="images/author_1.jpg" alt=""></div></div>
+													<div class="post_author_name"><a href="#">Bart Simpson</a></div>
+												</div>
+												<div class="post_date"><a href="#">2 Mayo 2019</a></div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<!-- Technology -->
+
+						<div class="technology">
+							<div class="section_title_container d-flex flex-row align-items-start justify-content-start">
+								<div>
+									<div class="section_title">Dispositivos nuevos</div>
+									<div class="section_subtitle">Lo que todos queremos</div>
+								</div>
+								<div class="section_bar"></div>
+							</div>
+							<div class="technology_content">
+
+								<!-- Post -->
+								<div class="post_item post_h_large">
+									<div class="row">
+										<div class="col-lg-5">
+											<div class="post_image"><img src="images/post_h_1.jpg" alt="https://unsplash.com/@jmckinven"></div>
+										</div>
+										<div class="col-lg-7">
+											<div class="post_content">
+												<div class="post_category cat_technology"><a href="category.html">Lo + nuevo</a></div>
+												<div class="post_title"><a href="single.html">El nuevo smartwath de Apple</a></div>
+												<div class="post_info d-flex flex-row align-items-center justify-content-start">
+													<div class="post_author d-flex flex-row align-items-center justify-content-start">
+														<div><div class="post_author_image"><img src="images/author_1.jpg" alt=""></div></div>
+														<div class="post_author_name"><a href="#">Juan Ornelas</a></div>
+													</div>
+													<div class="post_date"><a href="#">29 April 2018</a></div>
+													<div class="post_comments ml-auto"><a href="#">5 commentarios</a></div>
+												</div>
+												<div class="post_text">
+													<p>Contesta una llamada cuando estés nadando, pídele a Siri que mande un mensaje y entrena escuchando tus canciones favoritas en streaming sin necesidad de llevar el teléfono contigo.
+														 Disfruta la libertad de ir adonde quieras sólo con tu reloj.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Post -->
+								<div class="post_item post_h_large">
+									<div class="row">
+										<div class="col-lg-5">
+											<div class="post_image"><img src="images/post_h_2.jpg" alt="https://unsplash.com/@neonbrand"></div>
+										</div>
+										<div class="col-lg-7">
+											<div class="post_content">
+												<div class="post_category cat_world"><a href="category.html">world</a></div>
+												<div class="post_title"><a href="single.html">Lo destacado del E3 de las vegas</a></div>
+												<div class="post_info d-flex flex-row align-items-center justify-content-start">
+													<div class="post_author d-flex flex-row align-items-center justify-content-start">
+														<div><div class="post_author_image"><img src="images/author_1.jpg" alt=""></div></div>
+														<div class="post_author_name"><a href="#">Lisa Simpson</a></div>
+													</div>
+													<div class="post_date"><a href="#">4 Junio 2018</a></div>
+													<div class="post_comments ml-auto"><a href="#">5 comentarios</a></div>
+												</div>
+												<div class="post_text">
+													<p>E3 2018. Los 25 trailers, fecha de lanzamiento y plataformas de los mejores juegos presentados</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Post -->
+								<div class="post_item post_h_large">
+									<div class="row">
+										<div class="col-lg-5">
+											<div class="post_image"><img src="images/post_h_3.jpg" alt="https://unsplash.com/@cdr6934"></div>
+										</div>
+										<div class="col-lg-7">
+											<div class="post_content">
+												<div class="post_category cat_world"><a href="category.html">world</a></div>
+												<div class="post_title"><a href="single.html">Lo nuevos dispositivos de sony</a></div>
+												<div class="post_info d-flex flex-row align-items-center justify-content-start">
+													<div class="post_author d-flex flex-row align-items-center justify-content-start">
+														<div><div class="post_author_image"><img src="images/author_1.jpg" alt=""></div></div>
+														<div class="post_author_name"><a href="#">Bart Simpson</a></div>
+													</div>
+													<div class="post_date"><a href="#">6 Junio 2018</a></div>
+													<div class="post_comments ml-auto"><a href="#">6 comentarios</a></div>
+												</div>
+												<div class="post_text">
+													<p>Actualizate con lo mas nuevo en tecnologia de los dispositivos Android</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<!-- World -->
+
+						<div class="world">
+							<div class="section_title_container d-flex flex-row align-items-start justify-content-start">
+								<div>
+									<div class="section_title">Destacado a nivel mundial</div>
+									<div class="section_subtitle">Lo + interesante</div>
+								</div>
+								<div class="section_bar"></div>
+							</div>
+							<div class="row world_row">
+								<div class="col-lg-11">
+									<div class="row">
+										<div class="col-lg-6">
+
+											<!-- Post -->
+											<div class="post_item post_v_med d-flex flex-column align-items-start justify-content-start">
+												<div class="post_image"><img src="images/post_4.jpg" alt="https://unsplash.com/@oria_hector"></div>
+												<div class="post_content">
+													<div class="post_category cat_technology"><a href="category.html">Tecnologia</a></div>
+													<div class="post_title"><a href="single.html">Dispositivos de gama alta vs gama media</a></div>
+													<div class="post_info d-flex flex-row align-items-center justify-content-start">
+														<div class="post_author d-flex flex-row align-items-center justify-content-start">
+															<div><div class="post_author_image"><img src="images/author_1.jpg" alt=""></div></div>
+															<div class="post_author_name"><a href="#">Homero Simpson</a></div>
+														</div>
+														<div class="post_date"><a href="#">5 Julio 2018</a></div>
+														<div class="post_comments ml-auto"><a href="#">6 comentarios</a></div>
+													</div>
+													<div class="post_text">
+														<p>Es hora de elegir al mejor dispositivo de gama media y gama alta para el proximo regalo</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6">
+
+											<!-- Post -->
+											<div class="post_item post_v_med d-flex flex-column align-items-start justify-content-start">
+												<div class="post_image"><img src="images/post_5.jpg" alt="https://unsplash.com/@mattyfours"></div>
+												<div class="post_content">
+														<div class="post_category cat_technology"><a href="category.html">Ganadores del iPad</a></div>
+													<table class="table">
+													  <thead class="thead-dark">
+													    <tr>
+
+													      <th scope="col">#</th>
+																<th scope="col">usuario</th>
+													      <th scope="col">Apellido Materno</th>
+																 <th scope="col">Apellido Paterno</th>
+													      <th scope="col">Nombre</th>
+
+													    </tr>
+													  </thead>
+													  <tbody>
+
+													    <tr>
+													      <th scope="row">1</th>
+													      <td>@Gomez09</td>
+													      <td>Gomez</td>
+																<td>Hernandez</td>
+													      <td>Felipe</td>
+													    </tr>
+
+													    <tr>
+													      <th scope="row">2</th>
+																<td>@Juanjoseoh</td>
+													      <td>Ornelas</td>
+																<td>Herrera</td>
+													      <td>Juan Jose</td>>
+													    </tr>
+
+													    <tr>
+													      <th scope="row">3</th>
+													      <td>@Snake2</td>
+													      <td>Hinojosa</td>
+													      <td>Martinez</td>
+																<td>Daniel</td>
+													    </tr>
+
+															<tr>
+																<th scope="row">4</th>
+																<td>@Jeremy21</td>
+													      <td>Rodriguez</td>
+													      <td>Carreon</td>
+																<td>Jeremy</td>
+															</tr>
+
+															<tr>
+																<th scope="row">5</th>
+																<td>@Anonio38</td>
+													      <td>Castro</td>
+													      <td>Lugo</td>
+																<td>Luis Antonio</td>
+															</tr>
+
+													  </tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<!-- Load more button -->
+						<div class="load_more">
+							<div class="load_more_button"><a href="#">Leer mas</a></div>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Sidebar -->
+
+				<div class="col-lg-3">
+					<div class="sidebar">
+
+						<!-- Newsletter -->
+						<div class="sidebar_newsletter">
+							<div class="sidebar_title">Registrate para mayor informacion</div>
+							<form action="#" id="newsletter_form" class="newsletter_form">
+								<input type="email" class="newsletter_input" placeholder="Correo" required="required">
+								<button class="newsletter_button">Suscribir</button>
+							</form>
+						</div>
+
+						<!-- Extra -->
+
+
+						<!-- Latest Posts -->
+						<div class="sidebar_latest">
+							<div class="sidebar_title">Ultimos articulos</div>
+							<div class="latest_posts">
+
+								<!-- Latest Post -->
+								<div class="latest_post d-flex flex-row align-items-start justify-content-start">
+									<div><div class="latest_post_image"><img src="images/latest_1.jpg" alt="https://unsplash.com/@anniespratt"></div></div>
+									<div class="latest_post_content">
+										<div class="post_category_small cat_video"><a href="category.html">video</a></div>
+										<div class="latest_post_title"><a href="single.html">La programacion en tu vida</a></div>
+										<div class="latest_post_date">Marzo 12, 2018</div>
+									</div>
+								</div>
+
+								<!-- Latest Post -->
+								<div class="latest_post d-flex flex-row align-items-start justify-content-start">
+									<div><div class="latest_post_image"><img src="images/latest_2.jpg" alt="https://unsplash.com/@agkdesign"></div></div>
+									<div class="latest_post_content">
+										<div class="post_category_small cat_world"><a href="category.html">Mundial</a></div>
+										<div class="latest_post_title"><a href="single.html">Lo mas nuevo de HTC </a></div>
+										<div class="latest_post_date">Julio 23, 2018</div>
+									</div>
+								</div>
+
+								<!-- Latest Post -->
+								<div class="latest_post d-flex flex-row align-items-start justify-content-start">
+									<div><div class="latest_post_image"><img src="images/latest_3.jpg" alt="https://unsplash.com/@mfgonz"></div></div>
+									<div class="latest_post_content">
+										<div class="post_category_small cat_technology"><a href="category.html">Tecnologia</a></div>
+										<div class="latest_post_title"><a href="single.html">Android vs Apple </a></div>
+										<div class="latest_post_date">Julio 30, 2018</div>
+									</div>
+								</div>
+
+								<!-- Latest Post -->
+								<div class="latest_post d-flex flex-row align-items-start justify-content-start">
+									<div><div class="latest_post_image"><img src="images/latest_4.jpg" alt="https://unsplash.com/@juja_han"></div></div>
+									<div class="latest_post_content">
+										<div class="post_category_small cat_technology"><a href="category.html">Tecnologia</a></div>
+										<div class="latest_post_title"><a href="single.html">El uso de las redes sociales</a></div>
+										<div class="latest_post_date">1 Septiembre,2018</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<!-- Most Viewed -->
+
+						<div class="most_viewed">
+							<div class="sidebar_title">Lo mas Visto</div>
+							<div class="most_viewed_items">
+
+								<!-- Most Viewed Item -->
+								<div class="most_viewed_item d-flex flex-row align-items-start justify-content-start">
+									<div><div class="most_viewed_num">01.</div></div>
+									<div class="most_viewed_content">
+										<div class="post_category_small cat_video"><a href="category.html">Video</a></div>
+										<div class="most_viewed_title"><a href="single.html">Lo + nuevo</a></div>
+										<div class="most_viewed_date"><a href="#">Marzo 12, 2018</a></div>
+									</div>
+								</div>
+
+								<!-- Most Viewed Item -->
+								<div class="most_viewed_item d-flex flex-row align-items-start justify-content-start">
+									<div><div class="most_viewed_num">02.</div></div>
+									<div class="most_viewed_content">
+										<div class="post_category_small cat_world"><a href="category.html">Mundial</a></div>
+										<div class="most_viewed_title"><a href="single.html">Los robots en el siglo XXI</a></div>
+										<div class="most_viewed_date"><a href="#">2 Septiembre, 2018</a></div>
+									</div>
+								</div>
+
+								<!-- Most Viewed Item -->
+								<div class="most_viewed_item d-flex flex-row align-items-start justify-content-start">
+									<div><div class="most_viewed_num">03.</div></div>
+									<div class="most_viewed_content">
+										<div class="post_category_small cat_technology"><a href="category.html">Tecnologia</a></div>
+										<div class="most_viewed_title"><a href="single.html">10 tips para ser geek</a></div>
+										<div class="most_viewed_date"><a href="#">2 Septiembre, 2018</a></div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<!-- Tags -->
+
+						<div class="tags">
+							<div class="sidebar_title">Tags</div>
+							<div class="tags_content d-flex flex-row align-items-start justify-content-start flex-wrap">
+								<div class="tag cat_technology"><a href="category.html">tecnologia</a></div>
+								<div class="tag"><a href="category.html">Arte</a></div>
+								<div class="tag"><a href="category.html">Viaje</a></div>
+								<div class="tag cat_video"><a href="category.html">Video</a></div>
+								<div class="tag cat_party"><a href="category.html">Interesante</a></div>
+								<div class="tag"><a href="category.html">Musica</a></div>
+								<div class="tag cat_world"><a href="category.html">Mundial</a></div>
+								<div class="tag"><a href="category.html">Aventura</a></div>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="footer_social">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<ul class="footer_social_list d-flex flex-row align-items-center justify-content-center">
+							<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_content">
+			<!-- Image credit: https://unsplash.com/@badashphotos -->
+			<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/footer.jpg" data-speed="0.8"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<div class="logo_container">
+							<a href="#">
+								<div class="logo"><span>Tech</span>mag</div>
+								<div class="logo_sub">Revista de Innovacion y tecnologia</div>
+							</a>
+						</div>
+						<div class="footer_nav_container text-center">
+							<nav class="footer_nav">
+								<ul class="footer_nav_list d-flex flex-md-row flex-column align-items-center justify-content-start">
+									<li><a href="index.html">Inicio</a></li>
+									<li><a href="#">Acerca de</a></li>
+									<li><a href="#">Innovacion</a></li>
+									<li><a href="videos.html">videos</a></li>
+									<li><a href="registro.html">Registro</a></li>
+								</ul>
+							</nav>
+						</div>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap-4.1.2/popper.js"></script>
+<script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
